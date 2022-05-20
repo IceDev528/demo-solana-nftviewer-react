@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+### **Product requirements**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Use React or ReactNative.
+- Once a user inputs a public key then the viewer app displays all of the NFTs held by the public key.
+- The NFT data should be retrieved from Solana itself directly using libraries such as `solana-web3.js`. Do not extract data from other centralized services.
+- The list of retrieved NFTs should be up to date.
+- NFT listing can be customized.
+    - There are two buttons, **order by last transaction time** and **order by creation tim**e. Both of them make the items listed in decreasing order in time.
+    - If a user clicks **order by last transaction time** then the resulting NFTs become re-ordered according to their last transaction times.
+    - If a user clicks **order by creation tim**e ****then the resulting NFTs become re-ordered according to their last creation times.
+    - Initially the list is ordered by the last transaction times of the NFTs of a wallet.
+    - A user can change the order of ordered NFTs with drag-and-drop. (order customization).
+    - If a user clicks **order by last transaction time** after changing the existing order with drag-and-drops, the custom change is forgotten and the NFTs are only ordered by their last transaction times. The same happens for **order by creation tim**e.
+- A user can bookmark NFTs.
+    - Bookmarked NFTs always come before NFTs that are not bookmarked.
+    - Each bookmark can be removed individually.
+    - There is a button that can be used to get rid of the existing bookmarks.
+- When a user click a NFT card, it should link to `solscan.io/token/${nft_mint_public_key}`
+- There is an undo button with which a user can undo the last change in order he caused. Undos can be done 4 times consecutively at most.
+- The result of the order customization or bookmarks are persisted even after reopening the window.
 
-## Available Scripts
+### **How to submit the project**
 
-In the project directory, you can run:
+- We will create you a private Git repository and you can use it to make commits while you work.
 
-### `npm start`
+### **Notes**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- For testing, you can use the devnet addresses below. They are holders of multiple NFTs.
+`E2APdVioPqt8nXFn2Qqu5TKfU2Zp9vB3WP49J7PADWDH`
+`3sqgCvvQTqWpCydeQL9w1FwVFQpkkBM6eK1qa3WZD7Wg`
+Check out [this](https://solscan.io/account/E2APdVioPqt8nXFn2Qqu5TKfU2Zp9vB3WP49J7PADWDH?cluster=devnet#tokenAccounts)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Try make as many commits as possible whenever in question. Making only a single big commit can adversely affect the evaluation of your implementation.
+- Do not copy and paste code that was written by others. However, you can use third party libraries if they are widely adopted libraries and considered as almost standards. (e.g. Django, ReactJS, Material UI)
+- Do not share the task description with others. All rights are reserved by Konstellation.
+- Do not share your implementation with others. If we find out your submission overlaps with subsequent submissions you may be held accountable for it.
+- It is okay to submit your work with some of the requirements unsatisfied as far as you clearly denote what have been implemented and what not in `README.md`
