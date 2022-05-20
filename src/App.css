@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+/* Global styles */
+.btn-primary,
+.btn-clear {
+  border-radius: 10px;
+  padding: 13px 20px;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #C4C4C4;
+  margin-right: 24px;
+}
+
+.btn-clear {
+  background: #D13F3F;
+  color: #FFFFFF;
+}
+
+/* Search container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 792px;
+}
+
+.search-container .search-input {
+  width: 100%;
+  border: 0.5px solid #000;
+  border-radius: 10px;
+  padding: 16px 50px 16px 16px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+}
+
+/* Card container */
+.card {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  background: #C4C4C4;
+  border-radius: 15px 15px 10px 10px;
+}
+
+.card .card-preview {
+  position: relative;
+}
+
+.card .card-preview .card-image {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card .card-preview .star {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.card .card-details {
+  padding: 15px;
+  text-align: left;
+}
+
+.card .card-details .card-title {
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.card .card-details .card-creator {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* NFT Viewer */
+.nft-viewer .home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nft-viewer .home .nft-search-container {
+  width: 100%;
+}
+
+.nft-viewer .home .nft-search-container .nft-viewer-title {
+  display: block;
+  font-size: 56px;
+  line-height: 66px;
+  margin-bottom: 70px;
+}
+
+.nft-viewer .nft-viewer-container {
+  padding: 60px 0;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.nft-viewer .nft-viewer-container .nft-search-container {
+  display: flex;
+  align-items: center;
+}
+
+.nft-viewer .nft-viewer-container .nft-search-container .nft-viewer-title {
+  display: block;
+  font-size: 40px;
+  line-height: 46.88px;
+  margin-right: 80px;
+}
+
+.nft-viewer .nft-viewer-container .nft-search-container .search-container {
+  margin: unset;
+}
+
+.nft-viewer .nft-viewer-container .nft-btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0;
+  padding: 0 24px;
+}
+
+.nft-viewer .nft-viewer-container .nft-card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 60px;
+  padding: 0 24px;
+}
