@@ -1,7 +1,5 @@
 ### **Product requirements**
 
-## Prod version
-
 - Use React or ReactNative.
 - Once a user inputs a public key then the viewer app displays all of the NFTs held by the public key.
 - The NFT data should be retrieved from Solana itself directly using libraries such as `solana-web3.js`. Do not extract data from other centralized services.
